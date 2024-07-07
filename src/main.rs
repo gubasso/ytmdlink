@@ -14,6 +14,7 @@ enum LinkType {
 }
 
 #[derive(Parser, Debug)]
+#[command(name = "ytmdlink", about = "A program to fetch YouTube oEmbed data and generate markdown links")]
 struct CliArgs {
     /// Youtube URL
     url: String,
